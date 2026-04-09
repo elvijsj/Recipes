@@ -10,7 +10,9 @@
   <main class="container recipe-page">
     <a class="back-link" href="index.html">← Back to all recipes</a>
 
-    <img class="recipe-hero-image" src="images/Dumplings.jpeg" alt="Dumplings" />
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Dumplings.jpeg" alt="Dumplings" onclick="openImage(this.src)" />
+    </div>
 
     <h1 class="recipe-title">Dumplings</h1>
 
@@ -44,5 +46,19 @@
       </section>
     </div>
   </main>
+    <div id="imageModal" class="image-modal" onclick="closeImage()">
+  <img id="modalImg" />
+</div>
+
+<script>
+function openImage(src) {
+  document.getElementById("modalImg").src = src;
+  document.getElementById("imageModal").style.display = "flex";
+}
+
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>  
 </body>
 </html>

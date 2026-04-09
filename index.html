@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jirgensons Recipes</title>
+  <title>Recipes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    header {
+      padding: 30px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      padding: 12px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-  <h1>🍽 My Recipes</h1>
 
-  <h2>Pancakes</h2>
-  <p>Ingredients: flour, eggs, milk</p>
-  <p>Steps: mix → cook → eat</p>
+<header>🍽 Recipes</header>
+
+<div class="grid">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <div class="card-title">Dumplings</div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <div class="card-title">Chicken Sliders</div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <div class="card-title">Pulled Pork</div>
+  </div>
+
+</div>
 
 </body>
 </html>

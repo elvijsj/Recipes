@@ -1,73 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recipes</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-    }
-
-    header {
-      padding: 30px;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .card {
-      background: #1c1c1c;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: 0.2s;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    .card-title {
-      padding: 12px;
-      font-size: 16px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="site-title">Recipes</h1>
+        <p class="site-subtitle">My favorite homemade recipes</p>
+      </div>
+    </div>
+  </header>
 
-<header>🍽 Recipes</header>
+  <main class="container">
+    <section class="section-header">
+      <h2>All Recipes</h2>
+      <p>Click a recipe to open it</p>
+    </section>
 
-<div class="grid">
+    <section class="recipe-grid">
+      <a class="recipe-card" href="dumplings.html">
+        <img src="images/dumplings.jpg" alt="Dumplings" />
+        <div class="card-content">
+          <h3>Dumplings</h3>
+          <div class="tags">
+            <span>Comfort Food</span>
+            <span>Latvian</span>
+          </div>
+        </div>
+      </a>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200">
-    <div class="card-title">Dumplings</div>
-  </div>
+      <a class="recipe-card" href="chicken-sliders.html">
+        <img src="images/chicken-sliders.jpg" alt="Chicken Sliders" />
+        <div class="card-content">
+          <h3>Chicken Sliders</h3>
+          <div class="tags">
+            <span>Burgers</span>
+            <span>Party Food</span>
+          </div>
+        </div>
+      </a>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200">
-    <div class="card-title">Chicken Sliders</div>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200">
-    <div class="card-title">Pulled Pork</div>
-  </div>
-
-</div>
-
+      <a class="recipe-card" href="pulled-pork.html">
+        <img src="images/pulled-pork.jpg" alt="Pulled Pork" />
+        <div class="card-content">
+          <h3>Pulled Pork</h3>
+          <div class="tags">
+            <span>Slow Cook</span>
+            <span>Meat</span>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
 </body>
 </html>

@@ -78,5 +78,18 @@
       </section>
     </div>
   </main>
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+  <img id="modalImg" />
+</div>
+<script>
+function openImage(src) {
+  document.getElementById("modalImg").src = src;
+  document.getElementById("imageModal").style.display = "flex";
+}
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
 </body>
 </html>

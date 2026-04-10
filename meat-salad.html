@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meat Salad</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <!-- CLICKABLE IMAGE -->
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Meat-Salad.jpeg" alt="RECIPE_NAME" onclick="openImage(this.src)" />
+    </div>
+
+    <h1 class="recipe-title">Meat Salad</h1>
+
+    <div class="recipe-meta">
+      <span>Pork</span>
+      <span>Salad</span>
+      <span>Prep: 30 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Pork</li>
+          <li>Oak Original spice mix</li>
+          <li>Oak Sweet Garlic spice mix</li>
+          <li>Soy sauce</li>
+          <li>Teriyaki sauce</li>
+          <li>Water</li>
+        </ul>
+        <br>
+        <h2>Salad</h2>
+        <ul>
+          <li>Lettuce</li>
+          <li>Tomatoes</li>
+          <li>Cucumbers</li>
+          <li>Corn</li>
+          <li>Sweet berry balsamic dressing</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Cut the pork into very thin slices.</li>
+          <li>Fry the meat with Oak'a Original and Oak'a Sweet Garlic spice mixes.</li>
+          <li>Add soy sauce, teriyaki sauce, and water, then simmer until all the liquid has thickened.</li>
+          <li>In a bowl, chop lettuce, tomatoes, and cucumbers, then add corn.</li>
+          <li>Mix everything together and add sweet berry balsamic.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

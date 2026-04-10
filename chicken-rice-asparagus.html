@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chicken with Rice and Asparagus</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <!-- CLICKABLE IMAGE -->
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Chicken-Rice-Asparagus.jpg" alt="Chicken with Rice and Asparagus" onclick="openImage(this.src)" />
+    </div>
+
+    <h1 class="recipe-title">RECIPE_NAME</h1>
+
+    <div class="recipe-meta">
+      <span>TAG 1</span>
+      <span>TAG 2</span>
+      <span>Prep: XX min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Chicken</li>
+          <li>“Sweet Garlic” spice mix</li>
+          <li>Rice</li>
+          <li>Asparagus</li>
+          <li>Butter</li>
+          <li>Garlic</li>
+          <li>Cheese</li>
+          <li>Soy sauce</li>
+          <li>Honey</li>
+          <li>Cornstarch</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Coat the chicken in Oak'a Sweet Garlic spice mix and cook in an air fryer for 15–20 minutes at 200°C.</li>
+          <li>Wash the rice and start cooking it.</li>
+          <li>Snap off the ends of the asparagus and cook them in butter.</li>
+          <li>Cook for 7–8 minutes, turning halfway through.</li>
+          <li>When it’s almost done, add finely chopped garlic, cook briefly, then add cheese.</li>
+          <li>In another pan, cook 2 heads (bulbs) of finely chopped garlic.</li>
+          <li>Add soy sauce and honey.</li>
+          <li>Add the chicken and wait until the sauce thickens.</li>
+          <li>If the sauce does not thicken, add a cornstarch mixture.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

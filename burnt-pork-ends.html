@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RECIPE_NAME</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <!-- CLICKABLE IMAGE -->
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Burnt-Pork-Ends.jpeg" alt="Burnt Pork Ends" onclick="openImage(this.src)" />
+    </div>
+
+    <h1 class="recipe-title">Burnt Pork Ends</h1>
+
+    <div class="recipe-meta">
+      <span>Low & Slow</span>
+      <span>Pork</span>
+      <span>Prep: 300 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Pork belly</li>
+          <li>Oak’a Honey Spice Mix or Barbados Spice Mix</li>
+          <li>Butter</li>
+          <li>Brown sugar</li>
+          <li>Oak'a Original BBQ sauce</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        <ol>
+          <<li>Cut the pork into even cubes.</li>
+          <li>Season all pieces with Oak’a Honey Spice Mix or Barbados Spice Mix.</li>
+          <li>Preheat the grill to 135°C.</li>
+          <li>Cherry wood chips can be added for aroma.</li>
+          <li>Place the pork pieces on the grill and leave for 2.5 hours.</li>
+          <li>Remove the pork, add butter, brown sugar, and BBQ sauce.</li>
+          <li>Wrap in foil so nothing can leak out.</li>
+          <li>After 1.5 hours, turn it upside down.</li>
+          <li>After 1 more hour, remove from the grill.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

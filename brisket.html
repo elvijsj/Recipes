@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brisket-Beef Loin</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <!-- CLICKABLE IMAGE -->
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Brisket4.jpeg" alt="Brisket-Beef Loin" onclick="openImage(this.src)" />
+    </div>
+
+    <h1 class="recipe-title">Brisket-Beef Loin</h1>
+
+    <div class="recipe-meta">
+      <span>Meat</span>
+      <span>Brisket</span>
+      <span>Prep: 420 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Meat (Beef Loin)</li>
+          <li>Mustard</li>
+          <li>Oak’a SPG spice mix</li>
+          <li>Butter</li>
+          <li>2 tablespoons beef broth</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Coat the meat with mustard to act like a binder.</li>
+          <li>Season with Oak’a SPG spice mix.</li>
+          <li>Tie the meat with kitchen twine so it holds a nice shape.</li>
+          <li>Place on the grill once it has reached 120°C.</li>
+          <li>Grill until the internal temperature of the meat reaches 65°C.</li>
+          <li>Add butter and 2 tablespoons of beef broth, then wrap in foil.</li>
+          <li>Continue grilling until the meat reaches 95°C.</li>
+          <li>Remove from the grill, wrap in a towel, and let it rest for 30 minutes.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

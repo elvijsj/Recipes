@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomato Mozzarella Bruschettas</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <!-- CLICKABLE IMAGE -->
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Tomato-Bruschetas.jpeg" alt="Tomato Mozzarella Bruschettas" onclick="openImage(this.src)" />
+    </div>
+
+    <h1 class="recipe-title">Tomato Mozzarella Bruschettas</h1>
+
+    <div class="recipe-meta">
+      <span>TAG 1</span>
+      <span>TAG 2</span>
+      <span>Prep: XX min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Tomatoes</li>
+          <li>Basil</li>
+          <li>Garlic</li>
+          <li>Olive oil</li>
+          <li>Balsamic</li>
+          <li>Red pepper</li>
+          <li>Oregano</li>
+          <li>Salt</li>
+          <li>Black pepper</li>
+          <li>Honey</li>
+          <li>Mozzarella cheese</li>
+          <li>Bread</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Blend the tomatoes, but not too much — leave some larger pieces in there.</li>
+          <li>Strain off the excess liquid so only the thick part remains.</li>
+          <li>Finely chop the basil and garlic.</li>
+          <li>Mix everything together, add the spices, and a little bit of honey.</li>
+          <li>Lightly toast the bread.</li>
+          <li>Place mozzarella on the bread, add the tomato mixture, and garnish with a bit more basil.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

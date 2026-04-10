@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irkalijs</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <!-- CLICKABLE IMAGE -->
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Iraklijs.jpeg" alt="Iraklijs" onclick="openImage(this.src)" />
+    </div>
+
+    <h1 class="recipe-title">Iraklijs</h1>
+
+    <div class="recipe-meta">
+      <span>Spicy</span>
+      <span>Chicken</span>
+      <span>Prep: 45 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Chicken thighs</li>
+          <li>Potatoes</li>
+          <li>Champignons (mushrooms)</li>
+          <li>Red onion</li>
+          <li>Red sweet pepper</li>
+          <li>Leek</li>
+        </ul>
+        <br>
+        <h2>Spices</h2>
+        <ul>
+          <li>Delicious Chicken</li>
+          <li>Sweet Garlic</li>
+          <li>SPG</li>
+          <li>Spicy BBQ</li>
+        </ul>
+        <br>
+        <h2>Sauces</h2>
+        <ul>
+          <li>Cherry glaze</li>
+          <li>Asian chilli sauce</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Cut the chicken thighs into strips and start cooking.</li>
+          <li>Finely slice the potatoes and cook them in an air fryer.</li>
+          <li>Slice the mushrooms and add them to the chicken.</li>
+          <li>Add red onion cut into half-rings to the chicken.</li>
+          <li>Add red sweet pepper cut into long strips to the chicken.</li>
+          <li>Finely chop the leek, but do not add it yet.</li>
+          <li>Season with the spices: Delicious Chicken, Sweet Garlic, SPG, and Spicy BBQ.</li>
+          <li>Add the sauces: cherry glaze and Asian chili sauce, and cook until everything is glazed.</li>
+          <li>At the end, add the leek once everything is glazed.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

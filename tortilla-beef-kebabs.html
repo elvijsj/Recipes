@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tortilla Beef Kebabs</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <!-- CLICKABLE IMAGE -->
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Tortilla-Beef-Kebabs.jpeg" alt="Tortilla Beef Kebabs" onclick="openImage(this.src)" />
+    </div>
+
+    <h1 class="recipe-title">Tortilla Beef Kebabs</h1>
+
+    <div class="recipe-meta">
+      <span>Beef</span>
+      <span>Grill</span>
+      <span>Prep: 45 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>1.2 kg ground beef</li>
+          <li>6 large wheat tortillas</li>
+          <li>1 red sweet pepper</li>
+          <li>1/4 red onion (approx. 25–30 g)</li>
+          <li>4 cloves garlic</li>
+          <li>2 tbsp paprika powder (approx. 14 g)</li>
+          <li>1 tbsp ground cumin (approx. 7 g)</li>
+          <li>1 tbsp garlic powder (approx. 9 g)</li>
+          <li>1 tbsp oregano (approx. 2 g)</li>
+          <li>1 tbsp ground black pepper (approx. 6 g)</li>
+          <li>1 tbsp salt (approx. 15 g)</li>
+          <li>1/3 cup chopped parsley ≈ 20 g</li>
+          <li>1/4 cup chili oil ≈ 60 ml</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        <ol>
+          <li>In a large bowl, combine the ground beef, red pepper, onion, garlic, parsley, and all the spices.</li>
+          <li>Mix thoroughly until everything is evenly combined.</li>
+          <li>Trim the rounded edges of the tortillas to form a roughly square shape.</li>
+          <li>Spread a thin layer of the meat mixture evenly over each tortilla (not too thick, so it cooks properly).</li>
+          <li>Cut each tortilla into four pieces, then turn each piece upside down (meat side inward), and if needed, cut again.</li>
+          <li>During cooking, brush with chili oil.</li>
+          <li>Cook till golden brown.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

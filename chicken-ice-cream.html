@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crispy Chicken Cones</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/ChickenIceCream.jpg" alt="Crispy Chicken Cones" onclick="openImage(this.src)" />
+    </div>
+    
+    <div class="image-wrapper">
+      <img src="images/ChickenIceCream2.jpg" alt="Crispy Chicken Cones" onclick="openImage(this.src)" style="width:100%; border-radius:12px; cursor:pointer; max-height:420px; object-fit:cover;" />
+    </div>
+
+    <h1 class="recipe-title">Crispy Chicken Cones</h1>
+
+    <div class="recipe-meta">
+      <span>Chicken</span>
+      <span>Air Fryer</span>
+      <span>Prep: 35 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>300 g tortillas</li>
+          <li>3 tbsp oil (for brushing the tortillas)</li>
+          <li>1kg chicken breast fillet</li>
+          <li>Oak'a Delicious Chicken spice mix</li>
+          <li>1/2 can of corn</li>
+          <li>1/2 bag of potato chips</li>
+          <li>130 g cream cheese</li>
+          <li>4-5 tbsp mayonnaise</li>
+          <li>Chives (finely chopped)</li>
+          <li>Salt and black pepper to taste</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Cut the tortillas in half, roll each half into a cone shape, and secure the edge with a toothpick.</li>
+          <li>Place the cones onto a baking sheet lined with parchment paper and brush them lightly with oil.</li>
+          <li>Bake for about 20 minutes at 200°C (top and bottom heat mode, no fan) until the cones are golden and crispy. Remove the toothpicks carefully after baking.</li>
+          <li>Season the chicken breast thoroughly with Oak'a Delicious Chicken spice mix.</li>
+          <li>Cook the chicken in the air fryer until fully done and juicy.</li>
+          <li>Put the cooked chicken in a bowl and use a hand mixer (with the standard beaters) to quickly and perfectly shred the meat, then let it cool down.</li>
+          <li>In a large bowl, crush the chips, then add the shredded chicken, corn, cream cheese, and mayonnaise. Mix everything thoroughly and season with salt and pepper if needed.</li>
+          <li>Stuff the baked tortilla cones with the chicken filling and garnish the tops with finely chopped chives.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

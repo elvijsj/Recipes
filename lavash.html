@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chicken Tzatziki Lavash</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Lavash.jpg" alt="Chicken Tzatziki Lavash" onclick="openImage(this.src)" />
+    </div>
+    
+    <div class="image-wrapper">
+      <img src="images/Lavash2.jpg" alt="Chicken Tzatziki Lavash" onclick="openImage(this.src)" style="width:100%; border-radius:12px; cursor:pointer; max-height:420px; object-fit:cover;" />
+    </div>
+
+    <h1 class="recipe-title">Chicken Tzatziki Lavash</h1>
+
+    <div class="recipe-meta">
+      <span>Chicken</span>
+      <span>Wrap</span>
+      <span>Prep: 60 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        
+        <h3>Chicken & Base</h3>
+        <ul>
+          <li>1 kg ground chicken</li>
+          <li>Oak'a Citrus Margarita spice mix</li>
+          <li>Oak'a Delicious Chicken spice mix</li>
+          <li>Lavash bread</li>
+          <li>Olive oil</li>
+        </ul>
+
+        <h3>Tzatziki Sauce</h3>
+        <ul>
+          <li>Greek yogurt</li>
+          <li>Cucumber</li>
+          <li>Fresh dill</li>
+          <li>Olive oil</li>
+          <li>Roasted garlic (from the pan)</li>
+          <li>Salt & black pepper</li>
+        </ul>
+
+        <h3>Toppings & Extras</h3>
+        <ul>
+          <li>Cherry tomatoes</li>
+          <li>Head of garlic</li>
+          <li>Fresh cucumber</li>
+          <li>Sweet and spicy jalapeños</li>
+          <li>Parchment paper & foil</li>
+        </ul>
+
+        <h3>Pickled Red Onions</h3>
+        <ul>
+          <li>1-2 red onions</li>
+          <li>200ml white vinegar</li>
+          <li>200ml water</li>
+          <li>2 tbsp honey</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        
+        <h3>1. Pickled Onion (Prepare First)</h3>
+        <ol>
+          <li>Slice red onions thinly (use a mandolin if you have it) and pack them tightly into a jar or container.</li>
+          <li>In a small pot, combine water, white vinegar, and honey. Bring to a simmer.</li>
+          <li>Once simmering, turn off the heat and let it cool for one minute.</li>
+          <li>Pour the warm mixture over the onions. Let sit at room temperature for 15 minutes, then move to the fridge.</li>
+        </ol>
+
+        <h3>2. Chicken & Roasting</h3>
+        <ol>
+          <li>Preheat your oven to 200°C.</li>
+          <li>Season the ground chicken with Oak'a Citrus Margarita and Delicious Chicken spice mixes.</li>
+          <li>Place a sheet of parchment paper down, put the chicken on it, cover with another piece of paper/foil, and roll it out until evenly thin.</li>
+          <li>Roll the thin chicken sheet up tightly.</li>
+          <li>Place the wrapped chicken roll onto a baking pan. Add the cherry tomatoes and the whole head of garlic (with the top chopped off to expose the cloves).</li>
+          <li>Pour olive oil over the tomatoes and garlic, and season everything with salt.</li>
+          <li>Bake in the oven for 40-45 minutes. While it cooks, prepare your fresh toppings.</li>
+          <li>Once done, remove from the oven and let the chicken cool.</li>
+        </ol>
+
+        <h3>3. Tzatziki & Assembly</h3>
+        <ol>
+          <li>While the chicken is cooling, prepare the sauce: squeeze out and smash the roasted garlic cloves.</li>
+          <li>In a bowl, mix Greek yogurt, grated cucumber, smashed roasted garlic, finely chopped dill, a splash of olive oil, salt, and pepper.</li>
+          <li>Slice or shred the cooled chicken roll.</li>
+          <li>Lay out your lavash bread, spread a generous amount of tzatziki, and layer the chicken, roasted tomatoes, pickled onions, fresh cucumber, and jalapeños.</li>
+          <li>Roll the lavash tightly. Sear it in a hot pan for a minute on each side to seal it and get it warm and crispy.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

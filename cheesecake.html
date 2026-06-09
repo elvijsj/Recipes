@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elvijs & Greta's Special Cheesecake</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Cheesecake.jpg" alt="Elvijs & Greta's Special Cheesecake" onclick="openImage(this.src)" />
+    </div>
+    
+    <div class="image-wrapper">
+      <img src="images/Cheesecake2.jpg" alt="Elvijs & Greta's Special Cheesecake" onclick="openImage(this.src)" style="width:100%; border-radius:12px; cursor:pointer; max-height:420px; object-fit:cover;" />
+    </div>
+
+    <h1 class="recipe-title">Elvijs & Greta's Special Cheesecake</h1>
+
+    <div class="recipe-meta">
+      <span>Dessert</span>
+      <span>Baking</span>
+      <span>Prep: 120 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Crust</h3>
+        <ul>
+          <li>125g Selga cookies (or similar tea biscuits)</li>
+          <li>60g butter (82% fat)</li>
+        </ul>
+
+        <h3>For the Cake Filling</h3>
+        <ul>
+          <li>360g cream cheese (e.g., "Rasa")</li>
+          <li>200g sour cream (25% fat)</li>
+          <li>150g heavy cream (saldais krējums)</li>
+          <li>120g sugar</li>
+          <li>2 medium eggs</li>
+          <li>15g cornstarch</li>
+          <li>10ml vanilla extract</li>
+        </ul>
+
+        <h3>For the Sauce & Garnish</h3>
+        <ul>
+          <li>420g frozen raspberries</li>
+          <li>30g sugar</li>
+          <li>2 tsp cornstarch</li>
+          <li>15ml water</li>
+          <li>Fresh raspberries & powdered sugar (for decoration)</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        
+        <h3>1. Prepare the Crust</h3>
+        <ol>
+          <li>Melt 60g of butter in a small saucepan. Crush 125g of cookies in a bowl (you can use a meat mallet or a food processor). Pour the melted butter over the crushed cookies and mix until uniform.</li>
+          <li>Line the bottom of a 22cm springform pan with parchment paper cut to size.</li>
+          <li>Press the cookie mixture firmly and evenly into the bottom of the pan (a potato masher works perfectly for this).</li>
+          <li>Wrap the outside bottom and sides of the springform pan tightly with aluminum foil, making a high foil barrier to prevent any water from seeping in during the water bath.</li>
+          <li>Place the pan in the fridge for 30 minutes to cool and set.</li>
+        </ol>
+
+        <h3>2. Make the Cheesecake Filling</h3>
+        <ol>
+          <li>Preheat your oven to 180°C (top and bottom heat mode, no fan).</li>
+          <li>In a stand mixer, combine 360g cream cheese and 120g sugar. Mix well.</li>
+          <li>Add 200g sour cream and blend until completely smooth. <em>Tip: Scrape down the sides of the bowl after each step to ensure a lump-free batter!</em></li>
+          <li>Pour in 150g heavy cream and mix until uniform.</li>
+          <li>Add the 2 eggs one by one, mixing well after each addition.</li>
+          <li>Add 15g cornstarch and mix until fully incorporated. Finally, add 10ml vanilla extract and give it one last mix.</li>
+          <li>Take the chilled crust out of the fridge and pour the creamy filling over it. Smooth out the top by gently shaking the pan back and forth.</li>
+        </ol>
+
+        <h3>3. The Water Bath & Baking</h3>
+        <ol>
+          <li>Place the foil-wrapped springform pan inside a larger, deep baking pan. Pour hot water into the larger pan, making sure the water level does not go above your foil barrier.</li>
+          <li>Bake at 180°C for 30 minutes.</li>
+          <li>After 30 minutes, lower the oven temperature to 150°C and bake for another 30 minutes.</li>
+          <li>Once the baking time is up, turn off the oven but <strong>do not remove the cake</strong>. Let the cheesecake cool inside the oven with the door closed for about an hour.</li>
+          <li>Remove the cake from the oven and let it cool completely to room temperature. Carefully run a knife along the edges of the pan to release the cake.</li>
+        </ol>
+
+        <h3>4. Prepare the Sauce & Serve</h3>
+        <ol>
+          <li>In a small pot, combine 420g of frozen raspberries with 30g of sugar and 15ml of water. Bring to a boil.</li>
+          <li>Once the raspberries break down and the mixture is uniform, press it through a fine-mesh sieve into a bowl to remove the seeds.</li>
+          <li>Pour the smooth liquid back into the pot, add 2 teaspoons of cornstarch, and stir constantly while cooking until the sauce thickens. Let the sauce cool down.</li>
+          <li>Decorate the cooled cheesecake with fresh raspberries, dust with powdered sugar, and serve alongside the raspberry sauce.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

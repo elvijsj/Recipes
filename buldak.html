@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creamy Buldak Chicken Ramen</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container recipe-page">
+    <a class="back-link" href="index.html">← Back to all recipes</a>
+
+    <div class="image-wrapper">
+      <img class="recipe-hero-image" src="images/Buldak.jpg" alt="Creamy Buldak Chicken Ramen" onclick="openImage(this.src)" />
+    </div>
+    
+    <div class="image-wrapper">
+      <img src="images/Buldak2.jpg" alt="Creamy Buldak Chicken Ramen" onclick="openImage(this.src)" style="width:100%; border-radius:12px; cursor:pointer; max-height:420px; object-fit:cover;" />
+    </div>
+
+    <h1 class="recipe-title">Creamy Buldak Chicken Ramen</h1>
+
+    <div class="recipe-meta">
+      <span>Chicken</span>
+      <span>Air Fryer</span>
+      <span>Prep: 30 min</span>
+    </div>
+
+    <div class="recipe-layout">
+      <section class="recipe-box">
+        <h2>Ingredients</h2>
+        
+        <h3>The Chicken</h3>
+        <ul>
+          <li>Chicken thighs</li>
+          <li>Oak'a Sweet-Garlic Spice Mix</li>
+        </ul>
+
+        <h3>The Ramen & Sauce Base</h3>
+        <ul>
+          <li>1 pack Buldak Ramen (noodles, spice & sauce packet)</li>
+          <li>1 egg yolk</li>
+          <li>1 tbsp Hellmann's Light mayonnaise</li>
+        </ul>
+
+        <h3>Toppings & Sides</h3>
+        <ul>
+          <li>2 handsful Edamame beans</li>
+          <li>1 head of Pak Choi</li>
+          <li>2 eggs (for boiling)</li>
+          <li>Sesame seeds (for garnish)</li>
+          <li>Ramen noodle water</li>
+        </ul>
+      </section>
+
+      <section class="recipe-box">
+        <h2>Instructions</h2>
+        
+        <h3>1. Prep the Chicken & Toppings</h3>
+        <ol>
+          <li>Season the chicken thighs generously with Oak'a Sweet-Garlic Spice Mix.</li>
+          <li>Cook in the air fryer at 200°C for about 15 minutes, or until the internal temperature reaches 75°C. Slice once done.</li>
+          <li>Boil the edamame beans in water for 10 minutes, then drain.</li>
+          <li>Blanch one head of Pak Choi in boiling water for 5 minutes.</li>
+          <li>Boil 2 eggs for exactly 8 minutes (to get that perfect soft-boiled center with a slightly runny yolk). Cool in ice water, peel, and cut in half.</li>
+        </ol>
+
+        <h3>2. Build the Sauce Base</h3>
+        <ol>
+          <li>In your serving bowl, empty the Buldak spice packet and the liquid Buldak sauce packet.</li>
+          <li>Add 1 raw egg yolk and 1 tablespoon of Hellmann's Light mayonnaise to the bowl.</li>
+          <li>Mix everything together thoroughly until it forms a smooth, uniform, and creamy paste.</li>
+        </ol>
+
+        <h3>3. Noodles & Assembly</h3>
+        <ol>
+          <li>Boil the ramen noodles according to the package instructions. <strong>Do not throw away the noodle water!</strong></li>
+          <li>Transfer the cooked noodles directly into the bowl with the sauce base. Toss and coat the noodles thoroughly so the sauce sticks to them.</li>
+          <li>Pour in some of the hot noodle water to loosen the sauce and create a rich broth consistency.</li>
+          <li>Arrange all your prepared toppings on top: the sliced chicken, edamame beans, blanched pak choi, and the 8-minute soft-boiled eggs.</li>
+          <li>Garnish with sesame seeds and serve hot!</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="modalImg" />
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById("modalImg").src = src;
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeImage() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
